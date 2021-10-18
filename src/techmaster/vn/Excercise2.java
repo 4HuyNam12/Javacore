@@ -1,14 +1,19 @@
 package techmaster.vn;
 
+import java.util.Scanner;
+
 public class Excercise2 {
-    public static void substring(){
-        String s2 ="học lập trình java không khó";
-        String firstLetter = s2.substring(0,1);
-        String lastLetter = s2.substring(s2.length()-1,s2.length());
-        String remainLetter =s2.substring(1,s2.length()-1);
-        firstLetter = firstLetter.toUpperCase();
-        lastLetter =  lastLetter.toUpperCase();
-        s2= firstLetter + remainLetter +lastLetter;
-        System.out.println("Chuỗi sau khi viết hoa chữ cái đầu và chữ cái cuối là : " +s2);
+    public static void calculator(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhập vào số nguyên x ");
+        int x = sc.nextInt();
+        System.out.println("Nhập vào số nguyên y ");
+        int y = sc.nextInt();
+        float z = (float) x/y;
+        System.out.println("Tổng của hai số x và y là: "+ (x+y));
+        System.out.println("Hiệu của hai số x và y là: "+ (x-y));
+        System.out.println("Tích của hai số x và y là: "+ (x*y));
+        System.out.println("Thương của hai số x và y là: "+ z);
+
     }
 }

@@ -1,14 +1,15 @@
 package techmaster.vn;
 
+
 public class Main {
 
+
     public static void main(String[] args) {
-    Excercise1.s_excercise1();
-    Excercise2.substring();
+
+        System.out.println("Chiều dài cạnh huyền của tam giác là: " + TinhCanhHuyen.canhHuyen(3, 4));
+       Excercise2.calculator();
+        BMI.tinhBMI();
 
     }
-    public enum Day {
-        SUNDAY, MONDAY, TUESDAY, WEDNESDAY,
-        THURSDAY, FRIDAY, SATURDAY
-    }
+
 }
